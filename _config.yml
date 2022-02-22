@@ -1,0 +1,39 @@
+title: Seminar Women at IMPA
+description: An online seminar series to bring researchers women working in different areas of mathematics
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+future: true
+short_title: Women at IMPA Seminar Series
+default_day: "Thursday"
+default_time: "17:00 UTC-3"
+schedule_limit: 4
+previous_limit: 3
+header_menu:
+    -
+        title: "Home"
+        link: "/#home"
+    -
+        title: "Current Seminar"
+        link: "/#seminar"
+    -
+        title: "Schedule"
+        link: "/#schedule"
+    -
+        title: "Previous Seminars"
+        link: "/#previous"
+defaults:
+    - scope:
+        path: "_posts/current"
+      values:
+        layout: post
+        category: current
+    - scope:
+        path: "_posts/archive"
+      values:
+        layout: post
+        category: archive
+        
